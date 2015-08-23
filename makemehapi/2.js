@@ -8,7 +8,7 @@ server.connection({
 
 var handler = function(req, res) {
   res('Hello ' + req.params.name)
-}
+};
 
 server.route({
   path: '/{name}',
