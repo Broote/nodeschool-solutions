@@ -8,9 +8,9 @@ server.connection({
 
 var handler = function(req, res){
   res('Hello Hapi');
-}
+};
 
-server.route({path: '/', method: 'GET', handler: handler})
+server.route({path: '/', method: 'GET', handler: handler});
 
 server.start(function () {
   console.log('started on', server.info.uri);
